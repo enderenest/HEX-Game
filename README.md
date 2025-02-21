@@ -1,7 +1,7 @@
-# 🔷🔴 Hex Game Implementation
+# Hex Game Implementation
 
 
-## 📝 Project Overview
+## Project Overview
 
 This project is a console-based implementation of the Hex Board Game using C++. It includes:
 
@@ -13,9 +13,9 @@ Main Game Loop allowing two players to play alternately until one player wins.
 
 Players compete as Red (R) and Blue (B). The goal is to form a continuous path connecting opposite sides of the board.
 
-## 🏛️ Key Components
+## Key Components
 
-### 1️⃣ HexBoard Class
+### HexBoard Class
 
 Represents the board as a 2D grid with cells marked R for Red, B for Blue, and E for Empty.
 
@@ -29,7 +29,7 @@ turnRed(int i, int j) – Marks position (i, j) with R if empty.
 
 turnBlue(int i, int j) – Marks position (i, j) with B if empty.
 
-### 2️⃣ UnionFind Class
+### UnionFind Class
 
 Implements Union-Find data structure to check for connected paths.
 
@@ -45,12 +45,14 @@ unionNeighbors(HexBoard &hex, int i, int j, char color) – Connects a cell to i
 
 ---
 
-##▶️ How to Run
+## How to Run
 
 Compile and run the program:
 
+```
 g++ main.cpp -o hex_game
 ./hex_game
+```
 
 Follow the instructions in the console:
 
@@ -64,6 +66,7 @@ The game ends when Red connects top to bottom or Blue connects left to right.
 
 ## 📤 Sample Output
 
+```
 Welcome to my HEX game's early gameplay
 Red can play the first move
 Red's turn
@@ -71,16 +74,17 @@ Red's turn
 ...
 Game over!
 RED WINS!
+```
 
 ---
 
-## 🧑‍💻 Dependencies
+## Dependencies
 
 C++11 or later
 
 ---
 
-## ✨ Key Learnings
+## Key Learnings
 
 Board game representation using ASCII Art.
 
@@ -90,6 +94,6 @@ Pathfinding and connectivity using Union-Find.
 
 ---
 
-## 📫 Contact
+## Contact
 
 Feel free to reach out for questions or contributions!
